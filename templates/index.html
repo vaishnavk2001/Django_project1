@@ -1,5 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <title>Travello</title>
@@ -279,9 +280,9 @@
 								<img src="{% static 'images/destination_3.jpg'%}" alt="">
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">San Francisco</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
+								<div class="destination_title"><a href="destinations.html">{{tml.name}}</a></div>
+								<div class="destination_subtitle"><p>{{tml.desc}}</p></div>
+								<div class="destination_price">From ${{tml.price}}</div>
 							</div>
 						</div>
 

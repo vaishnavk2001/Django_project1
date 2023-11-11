@@ -8,3 +8,5 @@ class place:
     desc = str,
     img = str,
     price = str
+
+
