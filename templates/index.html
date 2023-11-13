@@ -249,78 +249,80 @@
 				<div class="col">
 					<div class="destinations_container item_grid">
 
+						{% for i in result %}
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{% static 'images/destination_1.jpg'%}" alt="">
-								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+								<img src="{{i.img.url}}" alt="" style="width:500px;height:50ppx">
+								<div class="spec_offer text-center"><a href="#">{{i.offer}}</a></div>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">{{result.name}}</a></div>
-								<div class="destination_subtitle"><p>{{result.desc}}</p></div>
-								<div class="destination_price">From ${{result.price}}</div>
+								<div class="destination_title"><a href="destinations.html">{{i.name}}</a></div>
+								<div class="destination_subtitle"><p>{{i.desc}}</p></div>
+								<div class="destination_price">From ${{i.price}}</div>
 							</div>
 						</div>
+						{% endfor %}
 
 						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_2.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Indonesia</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
+<!--						<div class="destination item">-->
+<!--							<div class="destination_image">-->
+<!--								<img src="{% static 'images/destination_2.jpg' %}" alt="">-->
+<!--							</div>-->
+<!--							<div class="destination_content">-->
+<!--								<div class="destination_title"><a href="destinations.html">Indonesia</a></div>-->
+<!--								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>-->
+<!--								<div class="destination_price">From $679</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_3.jpg'%}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">{{tml.name}}</a></div>
-								<div class="destination_subtitle"><p>{{tml.desc}}</p></div>
-								<div class="destination_price">From ${{tml.price}}</div>
-							</div>
-						</div>
+<!--						<div class="destination item">-->
+<!--							<div class="destination_image">-->
+<!--								<img src="{% static 'images/destination_3.jpg'%}" alt="">-->
+<!--							</div>-->
+<!--							<div class="destination_content">-->
+<!--								<div class="destination_title"><a href="destinations.html">{{tml.name}}</a></div>-->
+<!--								<div class="destination_subtitle"><p>{{tml.desc}}</p></div>-->
+<!--								<div class="destination_price">From ${{tml.price}}</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_4.jpg'%}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Paris</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
+<!--						<div class="destination item">-->
+<!--							<div class="destination_image">-->
+<!--								<img src="{% static 'images/destination_4.jpg'%}" alt="">-->
+<!--							</div>-->
+<!--							<div class="destination_content">-->
+<!--								<div class="destination_title"><a href="destinations.html">Paris</a></div>-->
+<!--								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>-->
+<!--								<div class="destination_price">From $679</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_5.jpg'%}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Phi Phi Island</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
+<!--						<div class="destination item">-->
+<!--							<div class="destination_image">-->
+<!--								<img src="{% static 'images/destination_5.jpg'%}" alt="">-->
+<!--							</div>-->
+<!--							<div class="destination_content">-->
+<!--								<div class="destination_title"><a href="destinations.html">Phi Phi Island</a></div>-->
+<!--								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>-->
+<!--								<div class="destination_price">From $679</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_6.jpg'%}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">Mykonos</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
+<!--						<div class="destination item">-->
+<!--							<div class="destination_image">-->
+<!--								<img src="{% static 'images/destination_6.jpg'%}" alt="">-->
+<!--							</div>-->
+<!--							<div class="destination_content">-->
+<!--								<div class="destination_title"><a href="destinations.html">Mykonos</a></div>-->
+<!--								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>-->
+<!--								<div class="destination_price">From $679</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 					</div>
 				</div>
