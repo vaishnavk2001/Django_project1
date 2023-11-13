@@ -10,7 +10,10 @@ class place(models.Model):
     offer = models.BooleanField(default=False)
 
 
-
-
-
-
+class news(models.Model):
+    head = models.CharField(max_length=50)
+    sub_head = models.CharField(max_length=70)
+    desc = models.TextField()
+    img = models.ImageField(upload_to='picture')
+    day = models.IntegerField()
+    month = models.CharField(max_length=12)
