@@ -16,5 +16,11 @@
         conf password : <input type="password" name="password2" placeholder="enter password"><br><br>
         <button type="submit">SUBMIT</button>
     </form>
+    <div>
+        {% for message in messages %}
+            <h2>{{message}}</h2>
+        {% endfor %}
+
+    </div>
 </body>
 </html>
