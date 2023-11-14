@@ -24,9 +24,10 @@ def register(request):
                                                 email=email, password=password)
                 user.save()
                 print('user created')
-                # return redirect('/')
+                messages.info(request, 'successfully created')
         else:
             print('password not match')
+            messages.info(request, 'password not match reenter...!')
             return redirect('register')
         return redirect('/')
     else:
