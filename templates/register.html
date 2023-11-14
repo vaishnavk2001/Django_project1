@@ -5,15 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+    <center>
     <h4>Registration form</h4><br><br>
     <form action="register" method="post">
         {% csrf_token %}
-        Username : <input type="text" name="username" placeholder="enter username"><br><br>
-        First Name : <input type="text" name="firstname" placeholder="enter the firstname"><br><br>
-        Last Name : <input type="text" name="Lastname" placeholder="enter the Lastname"><br><br>
-        Email : <input type="email" name="email" placeholder="enter the email"><br><br>
-        Password : <input type="password" name="password1" placeholder="enter password"><br><br>
-        conf password : <input type="password" name="password2" placeholder="enter password"><br><br>
+        USER NAME : <input type="text" name="username" placeholder="enter username"><br><br>
+        FIRST NAME : <input type="text" name="firstname" placeholder="enter the firstname"><br><br>
+        LAST NAME : <input type="text" name="Lastname" placeholder="enter the Lastname"><br><br>
+        EMAIL : <input type="email" name="email" placeholder="enter the email"><br><br>
+        PASSWORD : <input type="password" name="password1" placeholder="enter password"><br><br>
+        CONF PASSWORD : <input type="password" name="password2" placeholder="enter password"><br><br>
         <button type="submit">SUBMIT</button>
     </form>
     <div>
@@ -22,5 +23,6 @@
         {% endfor %}
 
     </div>
+    </center>
 </body>
 </html>

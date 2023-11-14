@@ -32,8 +32,13 @@
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li class="active"><a href="index.html">Home</a></li>
-									<li><a href="accounts/register">Register</a></li>
 									<li><a href="contact.html">Contact</a></li>
+									{% if user.is_authenticated %}
+									<li><a href="accounts/logout">logout</a></li>
+									{% else %}
+									<li><a href="accounts/register">Register</a></li>
+									<li><a href="accounts/login">login</a></li>
+									{% endif %}
 								</ul>
 							</nav>
 							<div class="header_phone ml-auto">Call us: 00-56 445 678 33</div>
@@ -106,7 +111,11 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
+										{% if user.is_authenticated %}
+										<div class="home_title"><h2>Hello  {{user.first_name}}</h2></div>
+										{% else %}
 										<div class="home_title"><h2>Let us take you away</h2></div>
+										{% endif %}
 									</div>
 								</div>
 							</div>
